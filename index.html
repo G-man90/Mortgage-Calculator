@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <div class="container flex">
+    <div class="calculator">
+      <div class="flex first">
+        <h2>Mortgage Calculator</h2>
+        <a href="" class="clearAll">Clear All</a>
+      </div>
+      <div class="second">
+        <p>Mortgage Amount</p>
+        <div class="mortgageAmount flex">
+          <span class="PH"><strong>&pound;</strong></span>
+          <input type="number" class="mortgage">
+        </div>
+      </div>
+      <div class="flex third">
+        <div class="term">
+          <p>Mortgage Term</p>
+          <div class="flex termInput">
+            <input type="number" class="inputTerm">
+            <span class="PH"><strong>years</strong></span>
+          </div>
+        </div>
+        <div class="rate">
+          <p>Interest Rate</p>
+          <div class="flex rateInput">
+            <input type="number" class="inputRate">
+            <span class="PH"><strong>&percnt;</strong></span>
+          </div>
+        </div>
+      </div>
+      <div class="fourth">
+        <p>Mortgage Type</p>
+        <div class="flex repayment">
+          <input type="checkbox" class="repaymentButton">
+          <span><strong>Repayment</strong></span>
+        </div>
+        <div class="flex interest">
+          <input type="checkbox" class="interestButton">
+          <span><strong>Interest Only</strong></span>
+        </div>
+
+      </div>
+      <div>
+        <button class="flex calculate"><img src="./assets/images/icon-calculator.svg" alt=""><strong>Calculate Repayments</strong></button>
+      </div>
+
+    </div>
+    <div class="result">
+      <!-- Empty results start -->
+      <div class="empty flex">
+        <img src="./assets/images/illustration-empty.svg" alt="">
+        <h2>Results shown here</h2>
+
+        <p>
+          <small>
+            Complete the form and click “calculate repayments” to see what 
+            your monthly repayments would be.
+          </small>
+        </p>
+      </div>
+      <!-- Empty results end -->
+    
+      <!-- Completed results start -->
+      <div class="complete">
+        <h2>Your results</h2>
+    
+        <p>
+          Your results are shown below based on the information you provided. 
+          To adjust the results, edit the form and click “calculate repayments” again.
+        </p>
+        <div class="RResults">
+          <div>
+            <p>Your monthly repayments</p>
+            <div class="completeR1">
+              <p>&pound;<article class="monthlyRepayments">0.00</article></p>
+            </div>
+            
+          </div>
+          <hr>
+          <div>
+            <p>Total you'll repay over the term</p>
+            <div class="completeR2">
+              <p>&pound;<article class="overTime">0.00</article></p>
+            </div>
+          </div>
+      
+          
+        </div>
+
+      </div>
+
+    
+      <!-- Completed results end -->
+    </div>
+
+  
+
+  </div>
+
+  
+</body>
+</html>

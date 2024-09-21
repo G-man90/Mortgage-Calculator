@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans';
+    background-color: hsl(202, 86%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 900px;
+    background-color: white;
+    border-radius: 25px;
+}
+input{
+    height: 30px;
+    padding: 5px 10px;
+    font-family: 'Plus Jakarta Sans';
+}
+input:focus{
+    outline: none;
+}
+.calculator{
+    background-color: white;
+    width: 50%;
+    padding: 30px;
+    border-radius: 25px;
+}
+.calculator p{
+    color: hsl(200, 24%, 40%);
+}
+.PH{
+    color: hsl(200, 26%, 54%);
+    background-color: hsl(202, 86%, 94%);
+}
+.mortgageAmount{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.mortgageAmount input{
+    width: 85.5%;
+    border: none;
+
+}
+.mortgageAmount .PH{
+    padding: 10px 15px;
+}
+
+
+.first{
+    justify-content: space-between;
+    
+}
+
+.third{
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+.third input{
+    border: none;
+}
+.term{
+    width: 48%;
+}
+.term input{
+    width: 60%;
+}
+.term div{
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.term .PH{
+    padding: 10px 15px;
+}
+.rate{
+    width: 48%;
+}
+.rate div{
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.rate input{
+    width: 100%;
+}
+.rate .PH{
+    padding: 10px 15px;
+}
+.fourth div{
+    justify-content: flex-start;
+    gap: 15px;
+    height: 25px;
+    border: 1px solid black;
+    padding: 10px 15px;
+    color: hsl(202, 55%, 16%);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+button{
+    font-family: 'Plus Jakarta Sans';
+    padding: 15px 30px;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: hsl(61, 70%, 52%);
+    border: none;
+    border-radius: 30px;
+    color: hsl(202, 55%, 16%);
+    font-size: 18px;
+}
+.result{
+    
+    width: 50%;
+    color: white;
+    border-radius: 0 25px 25px 50px;
+    height: 100%;
+}
+.result p{
+    color: hsl(200, 24%, 40%);
+}
+.empty{
+    background-color: hsl(202, 55%, 16%);
+    flex-direction: column;
+    height: 486px;
+    padding: 30px;
+    display: block;
+    border-radius: 0 25px 25px 50px;
+    text-align: center;
+    align-content: center;
+}
+.empty.show{
+    display: none;
+}
+.empty img{
+    width: 180px;
+}
+.empty p{
+    text-align: center;
+}
+.complete{
+    background-color: hsl(202, 55%, 16%);
+    display: none;
+    height: 486px;
+    padding: 30px;
+    border-radius: 0 25px 25px 50px;
+}
+.complete.show{
+    display: block;
+}
+.RResults{
+    background-color: hsl(202, 75%, 9%);
+    padding: 30px;
+    border-top: 5px solid hsl(61, 70%, 52%);
+    border-radius: 10px;
+}
+.completeR1{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: hsl(61, 70%, 52%);
+    
+}
+.completeR1 p{
+    color: hsl(61, 70%, 52%);
+    margin: 0;
+}
+hr{
+    color: hsl(202, 55%, 16%);
+}
+.completeR2{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.completeR2 p{
+    color: white;
+    margin: 0;
+}
+.clearAll{
+    color: hsl(200, 26%, 54%);
+}
